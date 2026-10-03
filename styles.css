@@ -1,0 +1,33 @@
+.multi-group-table-group {
+	margin-bottom: var(--size-4-4);
+}
+
+.multi-group-table-heading {
+	display: flex;
+	gap: var(--size-4-2);
+	align-items: baseline;
+	font-weight: var(--font-semibold);
+	padding: var(--size-4-1) 0;
+}
+
+.multi-group-table-property,
+.multi-group-table-count {
+	color: var(--text-muted);
+	font-weight: var(--font-normal);
+}
+
+.multi-group-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.multi-group-table th,
+.multi-group-table td {
+	text-align: start;
+	padding: var(--size-4-1) var(--size-4-2);
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.multi-group-table-more {
+	margin-top: var(--size-4-1);
+}
