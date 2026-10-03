@@ -31,3 +31,7 @@
 .multi-group-table-more {
 	margin-top: var(--size-4-1);
 }
+
+.multi-group-table-body.is-pending {
+	min-height: var(--multi-group-table-reserved);
+}

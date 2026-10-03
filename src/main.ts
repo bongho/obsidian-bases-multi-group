@@ -115,9 +115,10 @@ class MultiGroupTableView extends BasesView {
 			const groupId = group.label ?? NO_VALUE_ID;
 			const body = section.createDiv({ cls: 'multi-group-table-body' });
 			const rows = Math.min(group.entries.length, this.shownRows.get(groupId) ?? ROWS_PER_PAGE);
-			body.style.minHeight = `${ESTIMATED_HEAD_PX + rows * ESTIMATED_ROW_PX}px`;
+			body.addClass('is-pending');
+			body.setCssProps({ '--multi-group-table-reserved': `${ESTIMATED_HEAD_PX + rows * ESTIMATED_ROW_PX}px` });
 			pending.set(body, () => {
-				body.style.minHeight = '';
+				body.removeClass('is-pending');
 				this.renderTable(body, group.entries, columns, groupId);
 			});
 			observer.observe(body);
