@@ -1,7 +1,7 @@
 {
 	"id": "bases-multi-group",
 	"name": "Bases Multi-Group",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"minAppVersion": "1.10.0",
 	"description": "A Bases table view that lists a note under every value of a grouped list property.",
 	"author": "BongHo Lee",
