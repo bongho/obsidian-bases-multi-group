@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-bases-multi-group",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A Bases table view that lists a note under every value of a grouped list property",
 	"main": "main.js",
 	"scripts": {
@@ -13,6 +13,8 @@
 	"author": "BongHo Lee",
 	"license": "MIT",
 	"devDependencies": {
+		"@codemirror/state": "6.5.0",
+		"@codemirror/view": "6.38.6",
 		"@types/node": "^20.0.0",
 		"esbuild": "0.28.2",
 		"obsidian": "^1.13.1",
