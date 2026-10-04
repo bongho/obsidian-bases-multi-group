@@ -31,10 +31,12 @@ Tested on Obsidian 1.13.7 and 1.14.3.
 ## Development
 
 ```bash
-npm install --legacy-peer-deps
+npm ci
 npm test
 npm run build
 ```
+
+Releases are built and attested by the `Release` workflow when a tag matching the manifest version is pushed. If you regenerate `package-lock.json`, do it from a directory without `node_modules` (npm 11 or later) so bindings for every platform are kept.
 
 ## License
 
